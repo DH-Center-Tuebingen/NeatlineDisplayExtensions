@@ -88,27 +88,24 @@ function recheck_esc_content(){
 
 
 function handle_esc_content(){
-    $(".esc-textblock").each(function() {
-		var t = $(this);
-		if(t.find(".esc-text-choice").length > 0) {		
-			t.mouseover(function() {
-				t.toggleClass( "esc-background-highlight");
-				t.find(".esc-text-choice-orig").each(function() {
-					t.toggleClass( "esc-text-choice-hidden");
+    $(".esc-textblock").each(function(){                
+		if($(this).find(".esc-text-choice").length > 0) {
+			$(this).mouseover(function() {
+				$(this).toggleClass("esc-background-highlight").find(".esc-text-choice-orig").each(function() {
+					$(this).toggleClass("esc-text-choice-hidden");
 				});
-				t.find(".esc-text-choice-reg").each(function() {
-					t.toggleClass( "esc-text-choice-hidden");
+				$(this).find(".esc-text-choice-reg").each(function() {
+					$(this).toggleClass("esc-text-choice-hidden");
 				});
 			});
-			t.mouseout(function() {
-				t.toggleClass( "esc-background-highlight" );
-				t.find(".esc-text-choice-orig").each(function() {
-					t.toggleClass( "esc-text-choice-hidden");
+			$(this).mouseout(function() {
+				$(this).toggleClass("esc-background-highlight").find(".esc-text-choice-orig").each(function() {
+					$(this).toggleClass( "esc-text-choice-hidden" );
 				});
-				t.find(".esc-text-choice-reg").each(function() {
-					t.toggleClass( "esc-text-choice-hidden");
+				$(this).find(".esc-text-choice-reg").each(function(){
+					$(this).toggleClass("esc-text-choice-hidden");
 				});
-			});		
+			});
 		}
 	});
 }
