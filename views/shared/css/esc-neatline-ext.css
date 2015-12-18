@@ -1,0 +1,102 @@
+/* 
+	Copyright 2015 eScience-Center, University of Tübingen
+	Authors: 				
+		Manuel Abbt
+		Michael Derntl <michael.derntl@uni-tuebingen.de>
+	License: WTFPL Version 2 (http://www.wtfpl.net/txt/copying/)
+*/
+
+
+/* Ein ContentElement entspricht einer Zeile */
+.esc-content {
+    /*border: 1px solid #EEEEEE;*/
+    margin-bottom: 8px;
+    font-family: Arial, "PT Serif", Times, serif;
+    line-height: 1.8;
+}
+.esc-content .esc-image {
+    padding: 0;    
+    margin: 0 auto;
+}
+
+/* Ansicht: Zwei Spalten: Bild links, Text rechts */
+/* ######################################################################## */
+
+/* Bild links */
+/* ------------------------------------------------------------------------ */
+.esc-content .esc-2col-image {    
+    float: left;
+    width: 55%;
+}
+
+/* Text rechts */
+.esc-content .esc-2col-text {    
+    float: right;
+    width: 44%;
+}
+
+/* Ansicht: Eine Spalte Bild mittig */
+.esc-content .esc-1col-image {
+    text-align: center;
+}
+
+.esc-text-choice-hidden {
+    display: none;
+}
+
+.esc-text-line {    
+}
+
+.esc-text-line-nr {
+    font-size: small;
+    display: inline-block; 
+    width: 15px;
+    color: #505050;
+}
+
+.esc-text-choice-orig {    
+}
+
+.esc-text-choice-reg {    
+}
+
+.esc-text-date {
+    border-bottom: 1px solid #000000;
+    border-right: 2px solid #000000;
+    padding-right: 2px;
+    margin-right: 5px;
+}
+
+#esc-list-image {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#esc-list-image-content {
+    /* Bild in Personen-Div */
+    max-width: 100%;
+}
+
+.esc-list-spanspace {
+    margin-right:15px;
+}
+
+.esc-background-highlight {
+    background-color: #FFFFCC;
+}
+
+.esc-deleted-text {
+    text-decoration: line-through;
+}
+
+.esc-added-text {  
+}
+
+.esc-later-added-text {
+    color: blue;
+}
+
+.esc-link-extern {
+    padding-right: 15px;
+    background: url("/omeka/projekte/extlink.gif") no-repeat scroll right center rgba(0, 0, 0, 0);
+}
