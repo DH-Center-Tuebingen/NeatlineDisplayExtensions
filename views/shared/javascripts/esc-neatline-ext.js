@@ -34,8 +34,8 @@ $(document).on('DOMNodeInserted', function(e) {
 		e.css('background-image', "url(\"/omeka/projekte/timebg.png\")");
 	}
 	else if(e.is('#waypoints.widget')) {
-		e.css('max-width', '20%');
-		$('#OpenLayers_Control_LayerSwitcher_56').css('right', '20%');
+		e.css('max-width', '20%').css('font-size', '1em');
+		$('#OpenLayers_Control_MaximizeDiv').parent().css('right', '20%');
 	}
 });
 
